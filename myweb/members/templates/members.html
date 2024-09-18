@@ -8,6 +8,11 @@
 <a href="../CONTACT">CONTACT</a>
 <a href="../members">members</a>
 <a href="../about">about</a>
+    <ul>
+    {% for x in mymembers %}
+      <li>{{ x.firstname }} {{ x.lastname }}</li>
+    {% endfor %}
+    </ul>
 
 </body>
 </html>
